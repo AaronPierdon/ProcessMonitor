@@ -24,7 +24,7 @@ public class IdleMonitor extends TimerTask{
 
             double oldValue = 0;
             double newValue = 0;
-            double idleThreshold = .2;
+            double idleThreshold = .4;
             boolean oldValueSet = false;
             boolean isActive;
             Runtime runtime = Runtime.getRuntime();
@@ -34,7 +34,7 @@ public class IdleMonitor extends TimerTask{
             
     public void startMonitoring(){
         Timer timer = new Timer();
-        timer.scheduleAtFixedRate(this, 0, 2000);
+        timer.scheduleAtFixedRate(this, 0, 1500);
 
 
     }
@@ -105,16 +105,14 @@ public class IdleMonitor extends TimerTask{
         }
         
         try{
-            runtime.exec("cls");
+            runtime.exec("powershell.exe cls");
         
         }catch(Exception err){}
         
         System.out.println("Process Active = " + isActive);
         
     }
-        
-                       
-                            
+          
                             
 }
 
