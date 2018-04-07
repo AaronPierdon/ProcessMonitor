@@ -15,7 +15,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class testprocessor extends TimerTask{
+public class IdleMonitor extends TimerTask{
 
     
                 

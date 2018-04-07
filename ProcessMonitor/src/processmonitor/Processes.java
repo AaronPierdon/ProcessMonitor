@@ -21,8 +21,8 @@ public class Processes {
 
             
     public static void main(String[] args) {
-        testprocessor p = new testprocessor();
-        p.startMonitoring();
+        IdleMonitor idleMontior = new IdleMonitor();
+        idleMontior.startMonitoring();
     }
     
 }
