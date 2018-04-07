@@ -60,15 +60,7 @@ public class processor extends TimerTask{
         return cpuValue;
     }
 
-    public boolean isActive(){
 
-        
-        
-        if((newValue - oldValue) >  idleThreshold)
-            return true;
-        else 
-            return false;
-    }
 
     @Override
     public void run() {
